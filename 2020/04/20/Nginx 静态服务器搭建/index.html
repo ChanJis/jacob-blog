@@ -7,15 +7,15 @@
   
   <title>Nginx 静态资源服务器 | Jacob&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Nginx 静态资源服务器配置 创建静态 html 文件   假设nginx 安装目录为：usr&#x2F;local&#x2F;nginx， nginx 目录下创建目录12# mkdir jacob# vim index.html    编辑 index.html 文件 1234567&lt;html&gt;&lt;head&gt;&lt;&#x2F;head&gt;&lt;body&gt;&lt;h1&gt;He">
+  <meta name="description" content="Nginx 静态资源服务器配置 创建静态 html 文件   假设nginx 安装目录为：usr&#x2F;local&#x2F;nginx， nginx 目录下创建目录和文件12# mkdir jacob# touch index.html    编辑 index.html 文件 1234567&lt;html&gt;&lt;head&gt;&lt;&#x2F;head&gt;&lt;body&gt;&lt;h1&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx 静态资源服务器">
 <meta property="og:url" content="https://chanjis.github.io/jacob-blog/2020/04/20/Nginx%20%E9%9D%99%E6%80%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Jacob&#39;s Blog">
-<meta property="og:description" content="Nginx 静态资源服务器配置 创建静态 html 文件   假设nginx 安装目录为：usr&#x2F;local&#x2F;nginx， nginx 目录下创建目录12# mkdir jacob# vim index.html    编辑 index.html 文件 1234567&lt;html&gt;&lt;head&gt;&lt;&#x2F;head&gt;&lt;body&gt;&lt;h1&gt;He">
+<meta property="og:description" content="Nginx 静态资源服务器配置 创建静态 html 文件   假设nginx 安装目录为：usr&#x2F;local&#x2F;nginx， nginx 目录下创建目录和文件12# mkdir jacob# touch index.html    编辑 index.html 文件 1234567&lt;html&gt;&lt;head&gt;&lt;&#x2F;head&gt;&lt;body&gt;&lt;h1&amp;">
 <meta property="og:locale" content="zh">
 <meta property="article:published_time" content="2020-04-20T09:37:00.000Z">
-<meta property="article:modified_time" content="2020-04-20T11:13:21.454Z">
+<meta property="article:modified_time" content="2020-04-20T11:18:28.545Z">
 <meta property="article:author" content="Jacob">
 <meta property="article:tag" content="nginx">
 <meta name="twitter:card" content="summary">
@@ -101,7 +101,7 @@
 <li>创建静态 html 文件</li>
 </ol>
 <ul>
-<li>假设nginx 安装目录为：<code>usr/local/nginx</code>， nginx 目录下创建目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># mkdir jacob</span><br><span class="line"># vim index.html</span><br></pre></td></tr></table></figure>
+<li>假设nginx 安装目录为：<code>usr/local/nginx</code>， nginx 目录下创建目录和文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># mkdir jacob</span><br><span class="line"># touch index.html</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -145,12 +145,12 @@
 <li>alias 和 root 的区别<ul>
 <li>alias: <ol>
 <li>必须以 ‘/‘结尾</li>
-<li>处理结果：root路径+location的路径</li>
+<li>处理结果：使用alias路径替换 location 路径</li>
 </ol>
 </li>
 <li>root:<ol>
 <li>结尾’/‘可加可不加</li>
-<li>处理结果：使用alias路径替换 location 路径</li>
+<li>处理结果：root路径+location的路径</li>
 </ol>
 </li>
 </ul>
@@ -182,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chanjis.github.io/jacob-blog/2020/04/20/Nginx%20%E9%9D%99%E6%80%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" data-id="ck98dvu3w0001twho9x6s8a4t" class="article-share-link">Share</a>
+      <a data-url="https://chanjis.github.io/jacob-blog/2020/04/20/Nginx%20%E9%9D%99%E6%80%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" data-id="ck98dz0l40005b4hohdttfgbe" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/jacob-blog/tags/nginx/" rel="tag">nginx</a></li></ul>
